@@ -8,20 +8,24 @@ public class exercicio03 {
 	
 	public static void main(String[] args) {
 		
-		Scanner num1 = new Scanner(System.in);
-		Scanner num2 = new Scanner(System.in);
-		Scanner num3 = new Scanner(System.in);
+		Scanner numero = new Scanner(System.in);
+		int num1, num2, num3, soma;
 		
-		System.out.print("Digite três numeros inteiro seguenciais: ");
+		System.out.print("Digite o primeiro numeros inteiro: ");
+		num1 = numero.nextInt();
 		
-		int numero1 = num1.nextInt();
-		int numero2 = num2.nextInt();
-		int numero3 = num3.nextInt();
+		System.out.print("Digite o Segundo numero inteiro: ");
+		num2 = numero.nextInt();
 		
-		int soma = numero1+ numero2+ numero3;
+		System.out.print("Digite o Terceiro numero inteiro: ");
+		num3 = numero.nextInt();
+		
+		soma = num1+ num2+ num3;
 		
 		
 		System.out.print("A soma dos numeros digitado é: "+ soma);
+		
+		numero.close();
 		
 			
 		
